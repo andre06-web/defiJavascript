@@ -1,0 +1,1 @@
+alert("ceci est le fichier Javascript");
