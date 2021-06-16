@@ -7,11 +7,36 @@
         <meta name="author" content="" />
         <title>Le défi Javascript</title>
         <link href="css/style.css" rel="stylesheet" />
+        <script src="js/monscript.js" refer></script>
     </head>
     <body>
-        <h1>Défi Javascript</h1>
+    <h1>Défi Javascript</h1>
+        
+    <h3>Exercice 1 : Inverser les valeurs de deux variables</h3>
+    <div id="div1"></div><br>
+    <div id="div2"></div><br>
+        
+        <script>
+      function exo1(val1,val2)  {
     
-    
-    
-    <script src="js/monscript.js"></script>
+      document.getElementById("div1").innerHTML="a vaut " + val1 + " et b vaut "+val2;
+          
+}
+            
+ function exo1_1(val1,val2) {
+     
+      document.getElementById("div2").innerHTML="a vaut maintenant " + val1 + " et b vaut "+val2;
+ }           
+            
+    var a = 28 ;
+    var b = 64 ;
+        
+ exo1(a,b); 
+            
+            [a, b] = [b, a];
+        
+ exo1_1(a,b);      
+
+        </script>
+
     </body>
