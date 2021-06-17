@@ -46,12 +46,31 @@ minutesToSeconds(3) ;
 
 minutesToSeconds(15) ;
 
+console.log("Exercice 4 : Créez une fonction qui prend un nombre en argument, incrémente le nombre +1 et renvoie le résultat.\n\n");
+            
+function incremente(nbre){
+    
+   // nbre++ ;
+    
+    var incre = nbre + 1 ;
+    
+    console.log(nbre + " + 1 = " + incre);
+}
 
 
+incremente(7); incremente(13); incremente(67); 
 
+console.log("\nExercice 5 : Écrivez une fonction qui prend la base et la hauteur d’un triangle et retourne sa surface.\n\n");
 
+function surface(base,hauteur) {
+    
+    var surface = (base * hauteur)/2 ;
+    
+    console.log("base : " + base + "; hauteur : " + hauteur + "; Surface = " + surface + "\n\n") ; 
+    
+}
 
-
-
+ 
+surface(20,10) ; surface(4,16) ; surface(32,8) ;
 
 
