@@ -70,7 +70,49 @@ function surface(base,hauteur) {
     
 }
 
- 
 surface(20,10) ; surface(4,16) ; surface(32,8) ;
+
+console.log("\nExercice 6 : Écrivez un programme JavaScript pour inverser une chaîne de caractères.\n\n");
+
+function reverseStr(str) {
+      
+    var splitString = str.split("");  
+ 
+    var reverseArray = splitString.reverse(); 
+ 
+    var joinArray = reverseArray.join(""); 
+  
+    return joinArray;  
+    
+    
+}
+
+
+
+console.log(' "Salut les amis" devient : ' + reverseStr("Salut les amis"));
+
+console.log(' "Il existe 10 type de persoonnes : ceux qui comprennent le langage binaire, et les autres" devient : ' + reverseStr("Il existe 10 type de persoonnes : ceux qui comprennent le langage binaire, et les autres"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
