@@ -88,7 +88,7 @@ function reverseStr(str) {
 
 console.log(' "Salut les amis" devient : ' + reverseStr("Salut les amis"));
 
-console.log(' "Il existe 10 type de persoonnes : ceux qui comprennent le langage binaire, et les autres" devient : ' + reverseStr("Il existe 10 type de persoonnes : ceux qui comprennent le langage binaire, et les autres"));
+console.log(' "Il existe 10 type de persoonnes : ceux qui comprennent le langage binaire, et les autres" devient : ' + reverseStr("Il existe 10 types de personnes : ceux qui comprennent le langage binaire et les autres"));
 
 
 console.log("\nExercice 7 : Écrivez un programme JavaScript pour trouver le plus grand des trois entiers donnés.\n\n");
@@ -115,10 +115,12 @@ function getFirst(tableau){
     console.log("le tableau contient : " + tableau[0] +", " + tableau[1] +", " + tableau[2] +"; Le premier élément est : " + tableau[0] );
 }
 
+console.log("\nExercice 9 : Écrivez un programme JavaScript pour récupérer l’URL d’un site Web.\n\n");
 
+console.log("L'URL (Uniform Resource Locator) de cette page est : \n");
 
-
-
+console.log(window.location.href); 
+ 
 
 
 
