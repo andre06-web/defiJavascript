@@ -87,16 +87,24 @@ function reverseStr(str) {
     
 }
 
-
-
 console.log(' "Salut les amis" devient : ' + reverseStr("Salut les amis"));
 
 console.log(' "Il existe 10 type de persoonnes : ceux qui comprennent le langage binaire, et les autres" devient : ' + reverseStr("Il existe 10 type de persoonnes : ceux qui comprennent le langage binaire, et les autres"));
 
 
+console.log("\nExercice 7 : Écrivez un programme JavaScript pour trouver le plus grand des trois entiers donnés.\n\n");
 
+//getMax(5, 9, 1) ➞ 9
 
+function getMax(nb1,nb2,nb3) {
+    
+    var b = Math.max(nb1,nb2,nb3);
+    
+    console.log("3 nombres : " + nb1 + ", " + nb2 + ", " + nb3 + "; Le plus grand est : " + b);
+       
+}
 
+getMax(23,56,11);
 
 
 
