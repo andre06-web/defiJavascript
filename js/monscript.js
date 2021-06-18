@@ -83,8 +83,7 @@ function reverseStr(str) {
     var joinArray = reverseArray.join(""); 
   
     return joinArray;  
-    
-    
+   
 }
 
 console.log(' "Salut les amis" devient : ' + reverseStr("Salut les amis"));
@@ -93,8 +92,6 @@ console.log(' "Il existe 10 type de persoonnes : ceux qui comprennent le langage
 
 
 console.log("\nExercice 7 : Écrivez un programme JavaScript pour trouver le plus grand des trois entiers donnés.\n\n");
-
-//getMax(5, 9, 1) ➞ 9
 
 function getMax(nb1,nb2,nb3) {
     
@@ -105,10 +102,18 @@ function getMax(nb1,nb2,nb3) {
 }
 
 getMax(23,56,11);
+getMax(125,852,11);
+
+console.log("\nExercice 8 : Créez une fonction qui prend un tableau et renvoie le premier élément.\n\n");
+
+getFirst([15, 21, 30]) ;
+getFirst([50, 60, 70]) ;
 
 
-
-
+function getFirst(tableau){
+    
+    console.log("le tableau contient : " + tableau[0] +", " + tableau[1] +", " + tableau[2] +"; Le premier élément est : " + tableau[0] );
+}
 
 
 
