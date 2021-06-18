@@ -121,12 +121,20 @@ console.log("L'URL (Uniform Resource Locator) de cette page est : \n");
 
 console.log(window.location.href); 
  
+console.log("\nExercice 10 : Écrivez un programme JavaScript pour renvoyer le reste de deux nombres.\n\n");
 
 
+//console.log(  41 %  7 ); //  6
+//resteDiv(1, 3) ➞ 1
 
+function resteDiv(nb1,nb2){
+    
+   console.log( "Nombre1 = "+nb1+"; Nombre2 = "+nb2+"; Modulo = "+ nb1 %  nb2 ) 
 
+}
 
-
+resteDiv(1, 3);
+resteDiv(41, 7);
 
 
 
