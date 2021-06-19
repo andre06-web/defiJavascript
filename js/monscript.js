@@ -137,18 +137,174 @@ resteDiv(1, 3);
 resteDiv(41, 7);
 
  console.log("\nExercice 11 : Avec deux nombres, retournez TRUE si la somme des deux nombres est inférieure à 100.\n Sinon, retournez FALSE.\n\n");
-            
-var a = 50 ;
-var b = 49 ;
 
 
-console.log(Boolean(a+b < 100)) ;          
+function checkInferieur (nb1,nb2){
+    
+    var somme = nb1 + nb2 ;
+    
+    console.log("Nombre1 = "+nb1+"; Nombre2 = "+nb2+"; Résultat = "+Boolean(somme < 100)) ; 
+    
+}     
             
+       checkInferieur(75,30);  
+
+       checkInferieur(25,10); 
+
+ console.log("\nExercice 12 : Écrivez une fonction qui convertit les heures en secondes. \n\n");
+
+
+function heureSeconde (heure){
+    
+    var NbreSecondes = (heure * 60 ) * 60 ;
+    
+    console.log("Nombre d'heure = "+heure+"; Nombre de secondes = " + NbreSecondes) ; 
+    
+}     
             
+       heureSeconde(1);  
+
+       heureSeconde(5); 
+
+
+ console.log("\nExercice 13 : Créez une fonction qui prend un nombre \net renvoie TRUE s’il est inférieur ou égal à zéro, sinon retournez FALSE.\n\n");
+
+
+function checkNombre (nb){
+
+    
+    console.log("Nombre = "+nb+"; Résultat = "+Boolean(nb <=0)) ; 
+    
+}     
             
+       checkNombre(3);  
+
+       checkNombre(0); 
+
+       checkNombre(-1); 
+
+
+ console.log("\nExercice 14 : Créez une fonction qui renvoie TRUE lorsque nbr1 est égal à nbr2; sinon retournez FALSE.\n\n");
+
+
+function isEqual (nb1,nb2){
+
+    
+    console.log("Nombre1 = "+nb1+"; Nombre2 = "+nb2+"; Résultat = "+Boolean(nb1 === nb2)) ; 
+    
+}     
+    
+
+isEqual (3,3);
+    isEqual (3,'3');
+        isEqual (12,16);
             
 
 
+ console.log("\nExercice 15 : Créez une fonction qui renvoie TRUE si un entier est divisible par 5, sinon retournez FALSE.\n\n");
 
+
+function isDivisible (nb){
+
+    
+    console.log("Nombre = "+nb+"; Résultat = "+Boolean(nb % 5)) ; 
+    
+}     
+            
+       isDivisible(5); 
+       isDivisible(10); 
+       isDivisible(6); 
+
+ console.log("\nExercice 16 : Écrivez une fonction qui prend deux entiers (heures, minutes)\n et les convertit en secondes. \n\n");
+
+
+function hmToS (heures,minutes){
+    
+    var NbreSecondes = (heures * 3600 ) + (minutes * 60) ;
+    
+    console.log("heures : "+heures+"; minutes : " + minutes + " Nombre de secondes = " + NbreSecondes) ; 
+    
+}     
+            
+       hmToS(1,10) ;  
+
+       hmToS(0,59) ; 
+
+       hmToS(2,30) ; 
+
+ console.log("\nExercice 17 : Écrivez une fonction pour inverser un tableau. Attention: N’utilisez pas la méthode intégrée. \n\n");
+
+const tableau = ["La", "clef", "est", "sous", "le","paillasson"];
+
+var i=0;
+
+function inverseTableau( ) {
+
+  var tableauInverse = [];
+  
+  for (var i = tableau.length - 1; i >= 0; i--) {
+    tableauInverse.push(tableau[i]);
+  }
+  return tableauInverse;
+}
+
+console.log("Le tableau de départ : " + tableau);
+console.log("Le tableau inversé : " + inverseTableau()) ;
+
+
+
+
+
+
+
+console.log("\nExercice 18 : Créez une fonction qui prend un tableau et renvoie le dernier élément du tableau. \n\n");
+
+function getLastElem(tableau) {
+    
+    var dernierElem = tableau[tableau.length-1];
+    
+  console.log("Le tableau : " + tableau) ; 
+  console.log("Le dernier élément du tableau : " + dernierElem) ;  
+    
+}
+
+
+getLastElem(['Alex', 'Bob', 'Emily']) ;
+getLastElem([26, 40, 16, 24, 56, 72]) ;
+
+
+ console.log("\nExercice 19 : Créez une fonction qui vérifier l’égalité de deux paramètres a et b.\n La valeur et le type de paramètres doivent être testés afin d’avoir une égalité. \nLa fonction doit renvoyer TRUE si les paramètres sont égaux et FALSE s’ils sont différents.\n\n");
+
+
+function estEgal (elem1,elem2){
+
+    
+    console.log("Elem1 = "+elem1+"; Elem2 = "+elem2+"; Résultat = "+Boolean(elem1 === elem2)) ; 
+    
+}     
+    
+estEgal (3,3);
+    estEgal (3,'3');
+        estEgal (12,'Julien');
+
+
+
+ console.log("\nExercice 20 : Créez une fonction qui renvoie TRUE si une chaîne est vide et sinon renvoie FALSE.\n\n");
+
+function isEmpty(elem){
+  
+  
+  let voteable = (elem === "") ? "ok vide":"pas vide";
+  
+  
+  console.log("Chaîne = " + elem + " Résultat : " + voteable) ;
+ 
+    
+}
+
+isEmpty("shajkS") ;  
+isEmpty("WayToLearnX") ; 
+isEmpty(" ") ;
+isEmpty("") ;
 
 
