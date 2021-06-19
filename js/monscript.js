@@ -308,3 +308,33 @@ isEmpty(" ") ;
 isEmpty("") ;
 
 
+/*--------  cadeau Bonux  ---------*/
+
+ console.log("\nExercice 21 : Cadeau Bonux : chiffrez un texte avec Javascript :\n\n");
+
+var encodage="" ;
+
+function crypto (message){
+
+ for (i = 0; i < message.length-1; i++) { //boucle nbre de lettre du message
+ 
+ var lettre = message[i] ; // caractere numero 1, caractere 2, caractere 3, etc.
+ 
+ var codeascii= (lettre.charCodeAt()); // Code ASCII :  A=65 ; B=66 ; C=67; etc.
+ 
+ var cryptage = (lettre.charCodeAt()+4); // on ajoute 4 au code ASCII du caractere
+ 
+ var code = String.fromCharCode(cryptage); // on obtient le code ASCII du nombre (65 -> A, etc.)
+     
+   encodage = encodage + code ;
+}
+    
+    console.log("Message original : " + message+"\n\n");
+    
+    console.log("Message chiffré : " + encodage); // On affiche le résultat du chiffrement
+}
+
+crypto ("Le paquet sera déposé à la gare demain 15h, sous le siège C23");
+
+
+
