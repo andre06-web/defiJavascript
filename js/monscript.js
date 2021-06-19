@@ -136,6 +136,19 @@ function resteDiv(nb1,nb2){
 resteDiv(1, 3);
 resteDiv(41, 7);
 
+ console.log("\nExercice 11 : Avec deux nombres, retournez TRUE si la somme des deux nombres est inférieure à 100.\n Sinon, retournez FALSE.\n\n");
+            
+var a = 50 ;
+var b = 49 ;
+
+
+console.log(Boolean(a+b < 100)) ;          
+            
+            
+            
+            
+
+
 
 
 
