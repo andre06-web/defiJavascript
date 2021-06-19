@@ -316,7 +316,7 @@ var encodage="" ;
 
 function crypto (message){
 
- for (i = 0; i < message.length-1; i++) { //boucle nbre de lettre du message
+ for (i = 0; i < message.length; i++) { //boucle nbre de lettre du message
  
  var lettre = message[i] ; // caractere numero 1, caractere 2, caractere 3, etc.
  
